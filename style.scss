@@ -1,0 +1,96 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-image: url("background.jpg");
+}
+
+#app-container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 500px;
+    height: 900px;
+    border: solid silver;
+    border-radius: 50px ;
+    #result-container{
+        height: 30%;
+        background-color: black;
+        border-radius: 50px 50px 0 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        #result{
+            width: 100%;
+            height: 80px;
+            margin: 0 20px 30px 20px;
+            font-size: 80px;
+            text-align: end;
+            color: white;
+            background-color: black;
+            border: none;
+            outline: none;
+        }
+    }
+
+    #button-container{
+        background-color: black;
+        height: 70%;
+        border-radius: 0 0 50px 50px ;
+        .row-button-wrapper{
+            display: flex;
+            justify-content: space-between;
+            margin: 0px 20px 10px 20px;
+            input{
+                font-size: 40px;
+                width: 100px;
+                height: 100px;
+                text-align: center;
+                border-radius: 50%;
+                border: none;
+            }
+
+            input.calculation{
+                background-color: #fc9700;
+                color: white;
+                cursor: pointer;
+            }
+
+            input.calculation:focus{
+                background-color: white;
+                color: #fc9700;
+                cursor: pointer;
+            }
+            input.number{
+                background-color: #333333;
+                color: white;
+                cursor: pointer;
+            }
+            input.number:focus{
+                background-color: rgb(179, 156, 156);
+                color: white;
+                cursor: pointer;
+            }
+            input.other{
+                background-color: #a6a6a6;
+                color: black;
+                cursor: pointer;
+            }
+            input.other:focus{
+                background-color: white;
+                color: black;
+                cursor: pointer;
+            }
+            input#zero{
+                width: 220px;
+                height: 100px;
+                border-radius: 50px 50px 50px 50px;
+            }
+        }
+    }
+
+}
